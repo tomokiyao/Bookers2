@@ -1,0 +1,30 @@
+
+<h1>New book</h1>
+
+
+<h4>Title</h4>
+
+
+<h4>Body</h4>
+
+ 					<h2>New book</h2>
+						<%= form_for(@post_book) do |f| %>
+							<div class="field row">
+								<label for="book_name">Title</label>
+									<%= f.text_field :book_name, class: "col-xs-12" %>
+										<span class="fa fa-building form-control-icon" aria-hidden="true"></span>
+							</div>
+							<br>
+							<div class="field row">
+								<label for="caption">Opinion</label>
+									<%= f.text_area :caption, class: "col-xs-12" %>
+							</div>
+							<br>
+							<br>
+							<div class="action row">
+								<%= f.submit "Create Book", class: "col-xs-12 btn btn-primary" %>
+							</div>
+						<% end %>
+				</div>
+
+
