@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
+ root to: 'homes#index'
   get 'homes/index'
   get 'homes/show'
-  root to: 'homes#index'
   get 'post_books/new'
   get 'post_books/create'
   get 'post_books/index'
